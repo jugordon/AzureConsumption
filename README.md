@@ -10,7 +10,7 @@ In order to replicate this scenario you need to create the following Azure resou
 3. [Azure SQL Single Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)
 4. [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
 
-## High level architecture of the solution 
+## High level architecture 
 
 ![diagramaSolucion](https://user-images.githubusercontent.com/43896401/194111466-baf1b709-27f6-4ad2-bd3c-ffff7d3b9a31.jpg)
 
@@ -21,9 +21,9 @@ In order to replicate this scenario you need to create the following Azure resou
    - For Customers with Enterprise Agreements please https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/assign-roles-azure-service-principals
    - For customers with Microsoft Agreements https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
 
-##Deploy of Azure Function
+## Deploy of Azure Function
 
-##SQL Database objects
+## SQL Database objects
 
 ## Azure Data Factory configuration
 
