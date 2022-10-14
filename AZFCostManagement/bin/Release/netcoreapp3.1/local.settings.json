@@ -1,0 +1,14 @@
+{
+    "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "AccountName": "ctmmcostazure",
+    "AccountKey": "nmey+JlKHoOZ690sKbLG8JQx15/yKjA+S669oJB3xtNFapQEPFxxpx3NnfgjCX386lbKpQfi1Ihh+AStOduxcg==",
+    "TenantID": "6dc04634-28ed-4ed8-b998-31225cb0ca8c",
+    "ClientID": "4eea2b80-e67e-4e8c-9b5e-0cb057523ed9",
+    "SecretValue": "plK8Q~TI3McnPXWRO0x5bexIoRHud0-8.GF_GdAb",
+    "MaxChecks": 20,
+    "BillID": "5958050"
+  }
+}
