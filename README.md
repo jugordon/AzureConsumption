@@ -25,16 +25,23 @@ In order to replicate this scenario you need to create the following Azure resou
 
 ## SQL Database objects
 
+1. Open the files objetosSQLConsumo.sql and StoredProcedures in your prefered text editor.
+2. Replace {nombre_cliente} with the name of your organization
+3. Run the file objectosSQLConsumo.sql in  your database.
+4. Run the file StoredProcedures in  your database.
+
 ## Azure Data Factory configuration
 
 (https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
 
 
 
-1. Download the template to your computer.
+1. Download the template to your computer costMasterPipelineGenericov2.
 2. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/importTemplate.jpg)
-
-
+3. Configure the linked services for each one of the following elements :
+4. a. Blob Storage 
+5. b. SQL Database
+6. c. Azure Functions
 
 
 
