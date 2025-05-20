@@ -5,10 +5,10 @@ This project will allow you to have an end to end solution to monitor your Azure
 ## Requirements
 
 In order to replicate this scenario you need to create the following Azure resources :
-1. [Storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1).
-2. [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) with .NET support.
-3. [Azure SQL Single Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal)
-4. [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory)
+1. [Storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1).   - Standard Tier and LRS
+2. [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) - Consumption, .NET 8 (LTS ) isolated
+3. [Azure SQL Single Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) - General purpose , serverless recommended , locally redundant storage
+4. [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory) - V2
 
 ## High level architecture 
 
@@ -39,9 +39,9 @@ In order to replicate this scenario you need to create the following Azure resou
 1. Download the template to your computer costMasterPipelineGenericov2.
 2. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/importTemplate.jpg)
 3. Configure the linked services for each one of the following elements :
-4. a. Blob Storage account - Standard Tier and LRS
-5. b. SQL Database - General purpose , serverless recommended , locally redundant storage
-6. c. Azure Functions - Consumption, .NET 8 (LTS ) isolated
+4. a. Blob Storage account
+5. b. SQL Database 
+6. c. Azure Functions 
 
 
 
