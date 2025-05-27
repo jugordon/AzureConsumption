@@ -101,13 +101,24 @@ Now we are going to import the Azure Data Factory that will orchestrate the comp
 1. Download the pipeline template to your computer from ADFPipeline/costMasterPipelinev3.zip.
 2. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/importTemplate.jpg)
 3. Configure the linked services for each one of the following elements :
-4. a. Blob Storage account
-5. b. SQL Database 
-6. c. Azure Functions 
+   a. Blob Storage account
+   b. SQL Database 
+   c. Azure Functions 
 
 ## Schedule the daily execution of the pipeline using triggers
 
 1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
 2. Configure the daily trigger
 3. ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
+
+## Connect and Publish PowerBI Report
+1. Download the PowerBI template in PowerBITemplate/Azure_Consumption.pbix
+2. Open the file in PowerBI Desktop
+3. Go to transform data
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbitransform.png)
+4. Configure the source for each of the tables
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfiguresource.png)
+5. Change the server endpoint, login with your SQL user and select the tables
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/powerbiconfigureServer.png)
+6. After you see that your PowerBI data shows your data, click on Publish and select the workspace.
 
