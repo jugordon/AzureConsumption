@@ -22,7 +22,7 @@ Create the following Azure resources:
 
 ## High level architecture 
 
-![diagramaSolucion](https://user-images.githubusercontent.com/43896401/194111466-baf1b709-27f6-4ad2-bd3c-ffff7d3b9a31.jpg)
+![diagramaSolucion]([https://user-images.githubusercontent.com/43896401/194111466-baf1b709-27f6-4ad2-bd3c-ffff7d3b9a31.jpg](https://github.com/jugordon/AzureConsumption/blob/main/resources/newCostArchitecture.png) 
 
 ## Setup Guide
 
