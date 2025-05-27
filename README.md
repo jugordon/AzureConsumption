@@ -59,7 +59,7 @@ Add the following key vault secrets :
 
 ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecrets.png)
 
-### Allow the function app to read key vault secret permissions
+### Allow the function app to read key vault secrets
 1. In the function app, enable system identity
 2. ![Function identity](https://github.com/jugordon/AzureConsumption/blob/main/resources/functionIdentity.png)
 3. In the key vault account, go to Access Control (IAM) and add the role Key Vault Secret User to the managed identity of the function app
