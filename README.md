@@ -109,7 +109,7 @@ Now we are going to import the Azure Data Factory that will orchestrate the comp
 
 1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
 2. Configure the daily trigger
-3. ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
 
 ## Connect and Publish PowerBI Report
 1. Download the PowerBI template in PowerBITemplate/Azure_Consumption.pbix
