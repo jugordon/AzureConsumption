@@ -39,7 +39,7 @@ Create the following Azure resources:
 ## Create Azure Storage Container
 1. Go to your storage account service and create a new containaer ( suggested name costexport)
 
-![New Container](https://github.com/jugordon/AzureConsumption/blob/main/resources/newcontainer.png)
+![New Container](https://github.com/jugordon/AzureConsumption/blob/main/resources/newContainer.png)
 
 ## Deploy of Azure Function
 1. Download the zip file functionApp/costMasterPipelinev3.zip that containsthe deployment files of the function
