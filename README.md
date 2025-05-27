@@ -18,6 +18,7 @@ Create the following Azure resources:
 2. [Azure Function](https://learn.microsoft.com/en-us/azure/azure-functions/functions-create-function-app-portal) - Consumption, .NET 8 (LTS ) isolated
 3. [Azure SQL Single Database](https://learn.microsoft.com/en-us/azure/azure-sql/database/single-database-create-quickstart?view=azuresql&tabs=azure-portal) - General purpose , serverless recommended , locally redundant storage
 4. [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory) - V2
+5. [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) - Pricing tier standard , disable purge protection, permission model Azure role-based access control
 
 ## High level architecture 
 
