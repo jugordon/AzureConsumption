@@ -22,7 +22,7 @@ Create the following Azure resources:
 
 ## High level architecture 
 
-![diagramaSolucion]([https://user-images.githubusercontent.com/43896401/194111466-baf1b709-27f6-4ad2-bd3c-ffff7d3b9a31.jpg](https://github.com/jugordon/AzureConsumption/blob/main/resources/newCostArchitecture.png) 
+![diagramaSolucion](https://github.com/jugordon/AzureConsumption/blob/main/resources/newCostArchitecture.png) 
 
 ## Setup Guide
 
@@ -70,7 +70,7 @@ Inside the Table folder execute the following file :
 1. permissions.sql
 
 ## Azure Data Factory configuration
-![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/dataFactoryPipeline.jpg)
+![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/dataFactoryPipeline.png)
 
 Now we are going to import the Azure Data Factory that will orchestrate the complete data flow between the Azure Consumption API and the SQL Database
 
