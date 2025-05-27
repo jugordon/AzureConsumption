@@ -2,6 +2,11 @@
 
 This project will allow you to have an end to end solution to monitor your Azure Consumption, leveraging the use of some Azure Data Services and Azure Cost Management API ( https://learn.microsoft.com/en-us/rest/api/cost-management/ )
 
+## High level architecture 
+
+![diagramaSolucion](https://github.com/jugordon/AzureConsumption/blob/main/resources/newCostArchitecture.png) 
+
+
 ## Requirements
 
 Permissions 
@@ -20,9 +25,6 @@ Create the following Azure resources:
 4. [Azure Data Factory](https://learn.microsoft.com/en-us/azure/data-factory/quickstart-create-data-factory) - V2
 5. [Azure Key Vault](https://learn.microsoft.com/en-us/azure/key-vault/general/quick-create-portal) - Pricing tier standard , disable purge protection, permission model Azure role-based access control
 
-## High level architecture 
-
-![diagramaSolucion](https://github.com/jugordon/AzureConsumption/blob/main/resources/newCostArchitecture.png) 
 
 ## Setup Guide
 
