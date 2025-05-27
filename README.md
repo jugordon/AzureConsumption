@@ -9,9 +9,9 @@ Permissions
 2. Azure subscription and a resource group with permission to create resources
 
 Software required for the deployment : 
-1. [PowerBI Desktop] (https://www.microsoft.com/en-us/download/details.aspx?id=58494)
-2. [Azure CLI] (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=msi )
-3. [SQL Server Management studio or any SQL client] (https://learn.microsoft.com/en-us/ssms/install/install)
+1. [PowerBI Desktop](https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+2. [Azure CLI](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=msi )
+3. [SQL Server Management studio or any SQL client](https://learn.microsoft.com/en-us/ssms/install/install)
 
 Create the following Azure resources:
 1. [Storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1).   - Standard Tier and LRS
@@ -23,7 +23,9 @@ Create the following Azure resources:
 
 ![diagramaSolucion](https://user-images.githubusercontent.com/43896401/194111466-baf1b709-27f6-4ad2-bd3c-ffff7d3b9a31.jpg)
 
-## Getting permission to authenticate with the Cost management API
+## Setup Guide
+
+### Getting permission to authenticate with the Cost management API
 
 1. Create a service principal
 2. Add permissions to the SP
@@ -31,6 +33,13 @@ Create the following Azure resources:
    - For customers with Microsoft Agreements https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
 
 ## Deploy of Azure Function
+1. Download the zip file functionApp/costMasterPipelinev3.zip that containsthe deployment files of the function
+2. In Azure CLI execute the following commands :
+   - Az login   and login with your Azure credentials
+   - az account set --subscription <subscriptionId>  , replace <subscriptionId> with the subscriptionId where you have your Azure Resources
+   - az functionapp deployment source config-zip -g <resource_group> -n \<app_name> --src <zip_file_path>
+3. Wait a couple of minutes and you should see both functions deployed :
+  ![Functions deployed](https://github.com/jugordon/AzureConsumption/blob/main/resources/bothfunctions.png)
 
 ## Configure Azure Function Environment Variables
 
