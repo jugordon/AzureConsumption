@@ -32,24 +32,26 @@ Create the following Azure resources:
 
 ## Deploy of Azure Function
 
+## Configure Azure Function Environment Variables
+
 ## SQL Database objects
 
-Table Objects 
+### Table Objects 
+Inside the Table folder execute the following file : 
 1. consumption_tables.sql
 
-Stored procedures 
+### Stored procedures 
+Inside the StoredProcedures folder execute the following file : 
+1. funcionGetNumeric.sql
+2. StoredProcedures_operacion.sql
+3. costos_procesamiento.sql
 
-1.funcionGetNumeric.sql
-2.StoredProcedures_operacion.sql
-3.costos_procesamiento.sql
-
-Permissions
-1.permissions.sql
+### Permissions
+Inside the Table folder execute the following file : 
+1. permissions.sql
 
 ## Azure Data Factory configuration
-
 (https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
-
 
 
 1. Download the template to your computer costMasterPipelineGenericov2.
@@ -61,6 +63,7 @@ Permissions
 
 ## Schedule the daily execution of the pipeline using triggers
 
-1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.jpg)
-2. Configure the daily trigger ![New trigger1](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.jpg)
+1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
+2. Configure the daily trigger
+3. ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
 
