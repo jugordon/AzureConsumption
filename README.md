@@ -54,7 +54,7 @@ Inside the Table folder execute the following file :
 (https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
 
 
-1. Download the template to your computer costMasterPipelineGenericov2.
+1. Download the pipeline template to your computer from ADFPipeline/costMasterPipelinev3.zip.
 2. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/importTemplate.jpg)
 3. Configure the linked services for each one of the following elements :
 4. a. Blob Storage account
