@@ -60,8 +60,9 @@ Inside the Table folder execute the following file :
 1. permissions.sql
 
 ## Azure Data Factory configuration
-(https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
+![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
 
+Now we are going to import the Azure Data Factory that will orchestrate the complete data flow between the Azure Consumption API and the SQL Database
 
 1. Download the pipeline template to your computer from ADFPipeline/costMasterPipelinev3.zip.
 2. Import the template into ADF Piplines ![Import pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/importTemplate.jpg)
