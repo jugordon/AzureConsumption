@@ -54,7 +54,7 @@ Create the following Azure resources:
 
 Add the following key vault secrets : 
 1. AccountKey -> Access key of storage account
-2. AzureSQL -> Connection string of SQL Database ( .NET SQL Authentication) ( https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql#get-adonet-connection-information-optional---sql-database-only )
+2. AzureSQL -> Connection string of SQL Database ( ADO .NET SQL Authentication) ( https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql#get-adonet-connection-information-optional---sql-database-only )
 3. SecretValue -> Secret of the service principal ( obtained from service principal creation )
 
 ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecrets.png)
