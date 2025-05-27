@@ -34,10 +34,17 @@ Create the following Azure resources:
 
 ## SQL Database objects
 
-1. Open the files objetosSQLConsumo.sql and StoredProcedures in your prefered text editor.
-2. Replace {nombre_cliente} with the name of your organization
-3. Run the file objectosSQLConsumo.sql in  your database.
-4. Run the file StoredProcedures in  your database.
+Table Objects 
+1. consumption_tables.sql
+
+Stored procedures 
+
+1.funcionGetNumeric.sql
+2.StoredProcedures_operacion.sql
+3.costos_procesamiento.sql
+
+Permissions
+1.permissions.sql
 
 ## Azure Data Factory configuration
 
@@ -52,6 +59,8 @@ Create the following Azure resources:
 5. b. SQL Database 
 6. c. Azure Functions 
 
+## Schedule the daily execution of the pipeline using triggers
 
+1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.jpg)
+2. Configure the daily trigger ![New trigger1](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.jpg)
 
-Current limitation : You can only extract data from the last 3 months + the current month.
