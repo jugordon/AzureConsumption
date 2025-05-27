@@ -9,9 +9,9 @@ Permissions
 2. Azure subscription and a resource group with permission to create resources
 
 Software required for the deployment : 
-1. [PowerBI Desktop] (https://www.microsoft.com/en-us/download/details.aspx?id=58494) ![image](https://github.com/user-attachments/assets/088a8eac-a29e-48d0-b020-6669b362e681)
-2. Azure CLI (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=msi ) ![image](https://github.com/user-attachments/assets/eebbb788-d7fb-463f-8ce3-8fd9c39fc946)
-3. SQL Server Management studio or any SQL client (https://learn.microsoft.com/en-us/ssms/install/install) ![image](https://github.com/user-attachments/assets/38ff9452-8e01-48ed-88a9-76e3b1795583)
+1. [PowerBI Desktop] (https://www.microsoft.com/en-us/download/details.aspx?id=58494)
+2. [Azure CLI] (https://learn.microsoft.com/en-us/cli/azure/install-azure-cli-windows?view=azure-cli-latest&pivots=msi )
+3. [SQL Server Management studio or any SQL client] (https://learn.microsoft.com/en-us/ssms/install/install)
 
 Create the following Azure resources:
 1. [Storage account](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create?tabs=azure-portal#create-a-storage-account-1).   - Standard Tier and LRS
