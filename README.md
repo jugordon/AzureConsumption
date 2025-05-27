@@ -42,7 +42,7 @@ Create the following Azure resources:
 ![New Container](https://github.com/jugordon/AzureConsumption/blob/main/resources/newContainer.png)
 
 ## Deploy of Azure Function
-1. Download the zip file functionApp/costMasterPipelinev3.zip that containsthe deployment files of the function
+1. Download the zip file functionApp/CostManagementFunction.zip that contains the deployment files of the function
 2. In Azure CLI execute the following commands :
    - Az login   and login with your Azure credentials
    - az account set --subscription <subscriptionId>  , replace <subscriptionId> with the subscriptionId where you have your Azure Resources
@@ -57,9 +57,14 @@ Add the following key vault secrets :
 2. AzureSQL -> Connection string of SQL Database ( .NET SQL Authentication) ( https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql#get-adonet-connection-information-optional---sql-database-only )
 3. SecretValue -> Secret of the service principal ( obtained from service principal creation )
 
-
 ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecrets.png)
 
+### Allow the function app to read key vault secret permissions
+1. In the function app, enable system identity
+2. ![Function identity](https://github.com/jugordon/AzureConsumption/blob/main/resources/functionIdentity.png)
+3. In the key vault account, go to Access Control (IAM) and add the role Key Vault Secret User to the managed identity of the function app
+
+![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecretuser.png)
 
 ## Configure Azure Function Environment Variables
 Add the following environment variables : 
