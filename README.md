@@ -31,9 +31,15 @@ Create the following Azure resources:
 ### Getting permission to authenticate with the Cost management API
 
 1. Create a service principal
-2. Add permissions to the SP
-   - For Customers with Enterprise Agreements please https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/assign-roles-azure-service-principals
-   - For customers with Microsoft Agreements https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
+   - Save the following values : application ID , tenantID and secret value 
+2. Add the role Enrollment reader to the Service Principal : 
+   - For Customers with Enterprise Agreements (EA) please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/assign-roles-azure-service-principals
+   - For customers with Microsoft Agreements please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
+
+## Create Azure Storage Container
+1. Go to your storage account service and create a new containaer ( suggested name costexport)
+
+![New Container](https://github.com/jugordon/AzureConsumption/blob/main/resources/newcontainer.png)
 
 ## Deploy of Azure Function
 1. Download the zip file functionApp/costMasterPipelinev3.zip that containsthe deployment files of the function
@@ -46,12 +52,23 @@ Create the following Azure resources:
 
 ## Configure Key Vault Secrets
 
+Add the following key vault secrets : 
+1. AccountKey -> Access key of storage account
+2. AzureSQL -> Connection string of SQL Database ( .NET SQL Authentication) ( https://learn.microsoft.com/en-us/azure/azure-sql/database/connect-query-content-reference-guide?view=azuresql#get-adonet-connection-information-optional---sql-database-only )
+3. SecretValue -> Secret of the service principal ( obtained from service principal creation )
+
+
 ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecrets.png)
 
 
 ## Configure Azure Function Environment Variables
-Configure the following environment variables : 
-1. 
+Add the following environment variables : 
+1. AccountName -> Name of the storage account
+2. BillID -> BillID or enrollment number
+3. ClientID -> Application ID of the service principal ( obtained from service principal creation )
+4. ContainerName -> Name of storage container previously created
+5. KeyVault -> Name of the key vault account
+6. TenantID -> Tenant ID ( obtained from service principal creation )
 
 ![FunctionEnvVariables](https://github.com/jugordon/AzureConsumption/blob/main/resources/functionEnvVariables.png)
 
