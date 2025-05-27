@@ -79,6 +79,14 @@ Add the following environment variables :
 
 ## SQL Database objects
 
+### Create user
+1. Create a SQL database user that will have the permissions to read/write data
+
+   CREATE LOGIN CostUser   
+    WITH PASSWORD = 'mypassword';
+
+   CREATE USER CostUser FOR LOGIN CostUser;  
+
 ### Table Objects 
 Inside the Table folder execute the following file : 
 1. consumption_tables.sql
