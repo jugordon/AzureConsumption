@@ -41,7 +41,16 @@ Create the following Azure resources:
 3. Wait a couple of minutes and you should see both functions deployed :
   ![Functions deployed](https://github.com/jugordon/AzureConsumption/blob/main/resources/bothfunctions.png)
 
+## Configure Key Vault Secrets
+
+![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecrets.png)
+
+
 ## Configure Azure Function Environment Variables
+Configure the following environment variables : 
+1. 
+
+![FunctionEnvVariables](https://github.com/jugordon/AzureConsumption/blob/main/resources/functionEnvVariables.png)
 
 ## SQL Database objects
 
@@ -60,7 +69,7 @@ Inside the Table folder execute the following file :
 1. permissions.sql
 
 ## Azure Data Factory configuration
-![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/ADFPipeline.jpg)
+![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/dataFactoryPipeline.jpg)
 
 Now we are going to import the Azure Data Factory that will orchestrate the complete data flow between the Azure Consumption API and the SQL Database
 
