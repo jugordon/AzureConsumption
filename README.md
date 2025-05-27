@@ -36,12 +36,12 @@ Create the following Azure resources:
    - For Customers with Enterprise Agreements (EA) please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/assign-roles-azure-service-principals
    - For customers with Microsoft Agreements please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
 
-## Create Azure Storage Container
+### Create Azure Storage Container
 1. Go to your storage account service and create a new containaer ( suggested name costexport)
 
 ![New Container](https://github.com/jugordon/AzureConsumption/blob/main/resources/newContainer.png)
 
-## Deploy of Azure Function
+### Deploy of Azure Function
 1. Download the zip file functionApp/CostManagementFunction.zip that contains the deployment files of the function
 2. In Azure CLI execute the following commands :
    - Az login   and login with your Azure credentials
@@ -50,7 +50,7 @@ Create the following Azure resources:
 3. Wait a couple of minutes and you should see both functions deployed :
   ![Functions deployed](https://github.com/jugordon/AzureConsumption/blob/main/resources/bothfunctions.png)
 
-## Configure Key Vault Secrets
+### Configure Key Vault Secrets
 
 Add the following key vault secrets : 
 1. AccountKey -> Access key of storage account
