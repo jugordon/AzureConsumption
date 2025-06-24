@@ -113,12 +113,39 @@ Now we are going to import the Azure Data Factory that will orchestrate the comp
    b. SQL Database 
    c. Azure Functions 
 
+### Pipeline parameters
+
+Configure the following parameters  : 
+1. BillID -> BillID or enrollment number
+2. TenantID -> Tenant ID ( obtained from service principal creation )
+3. ClientID -> Application ID of the service principal ( obtained from service principal creation )
+4. Secret -> Secret of the service principal
+5. Period -> Period of time that will be processed by the pipeline, 0 : means current month, -1 : past month, -2 : 2 months ago, and so on..
+6. Customer -> Name of your company (it will be used in file names)
+
+![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/adfParameters.png)
+
+### Initial execution
+
+Now is time to test the first execution, click on trigger and trigger now.
+
+![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggerNow.png)
+
+
 ## Schedule the daily execution of the pipeline using triggers
 
 1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
 2. Configure the daily trigger
    ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
 
+## Schedule a monthly execution of the pipeline using triggers
+We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
+
+1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
+2. Configure the monthly trigger
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
+
+   
 ## Connect and Publish PowerBI Report
 1. Download the PowerBI template in PowerBITemplate/Azure_Consumption.pbix
 2. Open the file in PowerBI Desktop
