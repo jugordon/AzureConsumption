@@ -141,15 +141,17 @@ After the pipeline execution is finished, make to sure to go monitor and check t
 ## Schedule the daily execution of the pipeline using triggers
 
 1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
-2. Configure the daily trigger
-   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
+2. Configure the daily trigger :
+   
+![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
 
 ## Schedule a monthly execution of the pipeline using triggers
 We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
 
 1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
-2. Configure the monthly trigger
-   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
+2. Configure the monthly trigger :
+   
+![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
 
    
 ## Connect and Publish PowerBI Report
