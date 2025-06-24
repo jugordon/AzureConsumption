@@ -131,6 +131,12 @@ Now is time to test the first execution, click on trigger and trigger now.
 
 ![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggernow.png)
 
+### Monitor results
+
+After the pipeline execution is finished, make to sure to go monitor and check the result of the execution. Important note :  GetCosts and CheckProgress works in asynchronous way and they can have a failed status (because of timeouts limits by Azure function) but the pipeline will handle this and continue with the execution. All the other activities must have Succeeded status. In case not a debugging will be required.
+
+![Monitor results](https://github.com/jugordon/AzureConsumption/blob/main/resources/monitorResults.png)
+
 
 ## Schedule the daily execution of the pipeline using triggers
 
