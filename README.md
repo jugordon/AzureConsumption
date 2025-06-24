@@ -129,7 +129,7 @@ Configure the following parameters  :
 
 Now is time to test the first execution, click on trigger and trigger now.
 
-![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggerNow.png)
+![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggernow.png)
 
 
 ## Schedule the daily execution of the pipeline using triggers
