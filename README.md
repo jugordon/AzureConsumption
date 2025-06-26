@@ -65,7 +65,7 @@ Add the following key vault secrets :
 2. In the key vault account, go to Access Control (IAM) and add the role Key Vault Secret User to the managed identity of the function app
    ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecretuser.png)
 
-## Configure Azure Function Environment Variables
+## Configure Function Environment Variables
 Add the following environment variables : 
 1. AccountName -> Name of the storage account
 2. BillID -> BillID or enrollment number
