@@ -63,8 +63,7 @@ Add the following key vault secrets :
 1. Go to the function app -> settings -> identity -> and enable system identity
    ![Function identity](https://github.com/jugordon/AzureConsumption/blob/main/resources/functionIdentity.png)
 2. In the key vault account, go to Access Control (IAM) and add the role Key Vault Secret User to the managed identity of the function app
-
-![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecretuser.png)
+   ![KeyVault Secrets](https://github.com/jugordon/AzureConsumption/blob/main/resources/keyvaultsecretuser.png)
 
 ## Configure Azure Function Environment Variables
 Add the following environment variables : 
