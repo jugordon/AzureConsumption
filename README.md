@@ -122,35 +122,35 @@ Configure the following parameters  :
 5. Period -> Period of time that will be processed by the pipeline, 0 : means current month, -1 : past month, -2 : 2 months ago, and so on..
 6. Customer -> Name of your company (it will be used in file names)
 
-![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/adfParameters.png)
+   ![ADF Pipeline](https://github.com/jugordon/AzureConsumption/blob/main/resources/adfParameters.png)
 
 ### Initial execution
 
 Now is time to test the first execution, click on trigger and trigger now.
 
-![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggernow.png)
+   ![Trigger now](https://github.com/jugordon/AzureConsumption/blob/main/resources/triggernow.png)
 
 ### Monitor execution
 
 After the pipeline execution is finished, make to sure to go monitor and check the result of the execution. Important note :  GetCosts and CheckProgress works in asynchronous way and they can have a failed status (because of timeouts limits by Azure function) but the pipeline will handle this and continue with the execution. All the other activities must have Succeeded status. In case not a debugging will be required.
 
-![Monitor results](https://github.com/jugordon/AzureConsumption/blob/main/resources/monitorResult.png)
+   ![Monitor results](https://github.com/jugordon/AzureConsumption/blob/main/resources/monitorResult.png)
 
 
 ## Schedule the daily execution of the pipeline using triggers
 
-1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
+1. Select new triger
+   ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
 2. Configure the daily trigger :
-   
-![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/trigger_wizard.png)
 
 ## Schedule a monthly execution of the pipeline using triggers
 We recommend to configure a monthly execution that will process previous months, this is because it could be ajustments at the begining of each month. A recommended day would be to execute it each day 5 of month.
 
-1. Select new triger ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
+1. Select new triger
+   ![New trigger](https://github.com/jugordon/AzureConsumption/blob/main/resources/new_trigger.png)
 2. Configure the monthly trigger :
-   
-![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
+   ![Trigger wizard](https://github.com/jugordon/AzureConsumption/blob/main/resources/monthlyExecution.png)
 
    
 ## Connect and Publish PowerBI Report
