@@ -1,6 +1,6 @@
 # Azure Consumption Monitoring Solution
 
-This project will allow you to have an end to end solution to monitor your Azure Consumption, leveraging the use of some Azure Data Services and Azure Cost Management API ( https://learn.microsoft.com/en-us/rest/api/cost-management/ )
+This project will allow you to have an end to end solution to monitor your Azure Consumption, leveraging the use of  Azure Data Services and Azure Cost Management API ( https://learn.microsoft.com/en-us/rest/api/cost-management/ )
 
 ## High level architecture 
 
@@ -10,7 +10,7 @@ This project will allow you to have an end to end solution to monitor your Azure
 ## Requirements
 
 Permissions 
-1. User with EntraID administration permissions in Azure ( It will be used for setting the role of the service principal)
+1. User with Global Administrator Role in Azure ( It will be required for configure the role of EnrollmentReader in the service principal)
 2. Azure subscription and a resource group with permission to create resources
 
 Software required for the deployment : 
@@ -32,7 +32,7 @@ Create the following Azure resources:
 
 1. Create a service principal
    - Save the following values : application ID , tenantID and secret value 
-2. Add the role Enrollment reader to the Service Principal : 
+2. Asign Enrollment reader role to the Service Principal : 
    - For Customers with Enterprise Agreements (EA) please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/assign-roles-azure-service-principals
    - For customers with Microsoft Agreements please follow this guide : https://learn.microsoft.com/en-us/azure/cost-management-billing/manage/understand-mca-roles#manage-billing-roles-in-the-azure-portal
 
